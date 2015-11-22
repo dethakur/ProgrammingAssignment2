@@ -1,7 +1,10 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## This function takes a matrix and saves the inverse in "inv" variable
+## setinv is used to set the inverse
+## getinv is used to get the inverse
+## Return - the function returns a list object which contains all the methods. 
 
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
@@ -16,7 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function takes a makeCacheMatrix object
+## It puts the inverse of the matric in "inv" and returns that. "inv" is the inverted matrix.
 
 cacheSolve <- function(x, ...) {
         inv <- x$getinv()
@@ -28,5 +32,4 @@ cacheSolve <- function(x, ...) {
         inv <- solve(mat)
         x$setinv(inv)
         inv
-        ## Return a matrix that is the inverse of 'x'
 }
